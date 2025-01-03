@@ -5,11 +5,23 @@ Um ambiente virtual isolado permite o gerênciamento de dependências de forma c
 
 Este repositório tem como sugestão, a configuração de um ambiente de trabalho (ambiente virtual + dependências) para desenvolvimento de APIs REST, com a utilização de Django REST Framework.
 
-## Padronização dos commites
-- `feat`: (new feature for the user, not a new feature for build script)
-- `fix`: (bug fix for the user, not a fix to a build script)
-- `docs`: (changes to the documentation)
-- `style`: (formatting, missing semi colons, etc; no production code change)
-- `refactor`: (refactoring production code, eg. renaming a variable)
-- `test`: (adding missing tests, refactoring tests; no production code change)
-- `chore`: (updating grunt tasks etc; no production code change)
+## Padronização dos commits
+- `feat`: (nova funcionalidade para o usuário)
+- `fix`: (nova correção de bug para o usuário, nao correção de build script)
+- `docs`: (mudança na documentação)
+- `style`: (formatação, lint, falta de virgula, etc; não atualiza o codigo em produção)
+- `refactor`: (refatoração de codigo em produção, ex. renomeação de variáveis)
+- `test`: (adiciona testes, refatora tests; sem mudança em produção)
+- `chore`: (atualização de tarefas, etapa de desenvolvimento; não atualiza código em produção)
+
+## Dependências para execução de lint
+
+Pre-commit: [https://pre-commit.com](https://pre-commit.com/), https://github.com/pre-commit/pre-commit
+
+Flake8: https://flake8.pycqa.org/en/latest/index.html
+
+Isort: https://pycqa.github.io/isort/
+
+Black: https://pypi.org/project/black/
+
+`pip install pre-commit flake8 isort black`
