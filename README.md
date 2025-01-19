@@ -27,6 +27,9 @@ Black: https://pypi.org/project/black/
 `pip install pre-commit flake8 isort black`
 
 ### Configuração arquivo .pre-commit-config.yaml
+
+OBS: Atente-se para a versão do python que está utilizando!!!
+
 ```
 `repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -68,4 +71,13 @@ Black: https://pypi.org/project/black/
     rev: "" # Use the sha / tag you want to point at
     hooks:
       - id: autopep8`
+```
+
+Executar os seguintes comando no prompt antes de inicializar o projeto:
+
+```
+pre-commit install
+```
+```
+pre-commit autoupdate
 ```
