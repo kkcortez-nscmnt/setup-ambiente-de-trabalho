@@ -1,11 +1,11 @@
-# setup-ambiente-de-trabalho
+## setup-ambiente-de-trabalho
 Padronização da configuração do ambiente de desenvolvimento.
 
 Um ambiente virtual isolado permite o gerênciamento de dependências de forma controlada, facilitando o versionamento de pacotes, desta forma, o uso de pacotes instalados de forma global é desnecessária, tendo cada projeto um ambiente virtual isolado, evitando conflitos entre diferentes projetos.
 
 Este repositório tem como sugestão, a configuração de um ambiente de trabalho (ambiente virtual + dependências) para desenvolvimento de APIs REST, com a utilização de Django REST Framework.
 
-## Padronização dos commits
+### Padronização dos commits
 - `feat`: (nova funcionalidade para o usuário)
 - `fix`: (nova correção de bug para o usuário, nao correção de build script)
 - `docs`: (mudança na documentação)
@@ -14,7 +14,7 @@ Este repositório tem como sugestão, a configuração de um ambiente de trabalh
 - `test`: (adiciona testes, refatora tests; sem mudança em produção)
 - `chore`: (atualização de tarefas, etapa de desenvolvimento; não atualiza código em produção)
 
-## Dependências para execução de lint
+### Dependências para execução de lint
 
 Pre-commit: [https://pre-commit.com](https://pre-commit.com/), https://github.com/pre-commit/pre-commit
 
@@ -26,7 +26,7 @@ Black: https://pypi.org/project/black/
 
 `pip install pre-commit flake8 isort black`
 
-## Configuração arquivo .pre-commit-config.yaml
+### Configuração arquivo .pre-commit-config.yaml
 `repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.3.0
@@ -59,10 +59,10 @@ Black: https://pypi.org/project/black/
         language: system
         pass_filenames: false
         stages: [commit]
-  # - repo: https://github.com/pycqa/isort
-  #   rev: 5.12.0
-  #   hooks:
-  #     - id: isort
+  - repo: https://github.com/pycqa/isort
+     rev: 5.12.0
+     hooks:
+       - id: isort
   - repo: https://github.com/pre-commit/mirrors-autopep8
     rev: "" # Use the sha / tag you want to point at
     hooks:
