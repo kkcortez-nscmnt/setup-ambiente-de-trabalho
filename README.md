@@ -1,9 +1,12 @@
 ## setup-ambiente-de-trabalho
 Padronização da configuração do ambiente de desenvolvimento.
 
-Um ambiente virtual isolado permite o gerênciamento de dependências de forma controlada, facilitando o versionamento de pacotes, desta forma, o uso de pacotes instalados de forma global é desnecessária, tendo cada projeto um ambiente virtual isolado, evitando conflitos entre diferentes projetos.
+Um ambiente virtual isolado permite o gerênciamento de dependências de forma controlada, facilitando o versionamento de pacotes. Desta forma, o uso de pacotes instalados de forma global é desnecessária, tendo cada projeto um ambiente virtual isolado, evitando conflitos entre diferentes projetos.
 
-Este repositório tem como sugestão, a configuração de um ambiente de trabalho (ambiente virtual + dependências) para desenvolvimento de APIs REST, com a utilização de Django REST Framework.
+Este repositório tem como sugestão, a configuração de um ambiente de trabalho (ambiente virtual + dependências) para desenvolvimento com python 3.X .
+Esta configuração já foi testada e utilizada no Visual Studio Code, no desenvolvimento scripts para automatização no processamento e exportação de dados, desenvolvimento desktop com a utilização de Tkinter e desenvolvimento de APIs REST, com a utilização dos frameworks Django e Django REST Framework.
+
+---
 
 ### Padronização dos commits
 - `feat`: (nova funcionalidade para o usuário)
@@ -13,6 +16,8 @@ Este repositório tem como sugestão, a configuração de um ambiente de trabalh
 - `refactor`: (refatoração de codigo em produção, ex. renomeação de variáveis)
 - `test`: (adiciona testes, refatora tests; sem mudança em produção)
 - `chore`: (atualização de tarefas, etapa de desenvolvimento; não atualiza código em produção)
+
+---
 
 ### Dependências para execução de lint
 
@@ -26,9 +31,11 @@ Black: https://pypi.org/project/black/
 
 `pip install pre-commit flake8 isort black`
 
+---
+
 ### Configuração arquivo .pre-commit-config.yaml
 
-OBS: Atente-se para a versão do python que está utilizando!!!
+OBS: Atente-se para a versão do python que você está utilizando!!!
 
 ```
 `repos:
