@@ -109,3 +109,11 @@ multi-line-output = 3
 [flake8]
 ignore = F401, E501
 ```
+
+### Sugestão arquivo .gitignore para projetos python
+
+https://github.com/github/gitignore/blob/main/Python.gitignore
+
+### Sugestão arquivo .editorconfig para projetos python
+
+https://github.com/ONSdigital/ons-python-template/blob/main/.editorconfig
