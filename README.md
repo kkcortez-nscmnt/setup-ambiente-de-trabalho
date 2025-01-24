@@ -88,3 +88,24 @@ pre-commit install
 ```
 pre-commit autoupdate
 ```
+
+### Configuração arquivos: .flake8 e pyproject.toml
+
+Para configuração opicional das bibiotecas flake8 e black pode se criar arquivos .flake8 e pyproject.toml e customizar as configurações.
+Porem, deve-se atentar para a criação de conflitos entre as configurações posteriores.
+
+Exemplos:
+
+```
+# pyproject.toml
+[tool.black]
+line-length = 88
+multi-line-output = 3
+```
+
+```
+# .flake8
+
+[flake8]
+ignore = F401, E501
+```
