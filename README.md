@@ -10,6 +10,7 @@ Esta configuração já foi testada e utilizada no Visual Studio Code, no desenv
 
 ### Padronização dos commits
 - `init`: commit inicial do projeto
+- `lib`: adiciona nova biblioteca
 - `feat`: (nova funcionalidade para o usuário)
 - `fix`: (nova correção de bug para o usuário, nao correção de build script)
 - `docs`: (mudança na documentação)
