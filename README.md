@@ -40,9 +40,9 @@ Black: https://pypi.org/project/black/
 OBS: Atente-se para a versão do python que você está utilizando!!!
 
 ```
-`repos:
+repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.3.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
       - id: check-json
@@ -50,20 +50,11 @@ OBS: Atente-se para a versão do python que você está utilizando!!!
       - id: name-tests-test
       - id: requirements-txt-fixer
   - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 23.7.0
+    rev: 24.10.0
     hooks:
       - id: black
-        language_version: python3.11.5
-        stages: [commit]
-  - repo: https://github.com/pycqa/flake8
-    rev: 6.1.0
-    hooks:
-      - id: flake8
-        additional_dependencies:
-          - flake8-bugbear
-          - flake8-comprehensions
-          - flake8-simplify
-        stages: [commit]
+        language_version: python3.12.7
+        stages: [pre-commit]
   - repo: local
     hooks:
       - id: requirements
@@ -71,15 +62,15 @@ OBS: Atente-se para a versão do python que você está utilizando!!!
         entry: cmd /c 'pip freeze > requirements.txt; git add requirements.txt'
         language: system
         pass_filenames: false
-        stages: [commit]
+        stages: [pre-commit]
   - repo: https://github.com/pycqa/isort
-     rev: 5.12.0
-     hooks:
-       - id: isort
-  - repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: "" # Use the sha / tag you want to point at
+    rev: 5.13.2
     hooks:
-      - id: autopep8`
+      - id: isort
+  - repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: "v2.0.4" 
+    hooks:
+      - id: autopep8
 ```
 
 Executar os seguintes comando no prompt antes de inicializar o projeto:
